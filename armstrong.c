@@ -4,13 +4,13 @@ int main()
  int a,rem,s=0,temp;
  scanf("%d",&a);
  temp=a;
- while(temp!=0)
+ while(a!=0)
   {
    rem=a%10;
-   s=rem*rem*rem;
+   s+=rem*rem*rem;
    a=a/10;
   }
-  if(temp==s)
+  if(s==temp)
    {
     printf("armstrong");
     }
