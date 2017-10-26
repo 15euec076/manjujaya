@@ -1,17 +1,17 @@
 #include<stdio.h>
 int main(void)
 {
- int x,y,a,b,t,gcd,lcm;
+ int x,y,c,d,t,gcd,lcm;
  scanf("%d%d",&x,&y);
- a=x;
- b=y;
- while(b!=0)
+ c=x;
+ d=y;
+ while(d!=0)
  {
-  t=b;
-  b=a%b;
-  a=t;
+  t=d;
+  d=c%d;
+  c=t;
   }
- gcd=a;
+ gcd=c;
  lcm=(x*y)/gcd;
  printf("%d",lcm);
  return 0;
